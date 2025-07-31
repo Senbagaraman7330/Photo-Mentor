@@ -1,7 +1,7 @@
 <?php
 
 //  It is load the main load file
-include __DIR__.'/__-main_load.php';
+include_once __DIR__.'/__-main_load.php';
 
 ?>
 
