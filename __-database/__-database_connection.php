@@ -31,9 +31,7 @@ class database
      if (self::$conn->connect_error){
 
         die ("connection Failed Kindly check the connection" . self::$conn->connect_error);
-     } else {
-        echo "Connection Successfully";
-     }
+     } 
         }
 
      return self::$conn; // Return the connection object 

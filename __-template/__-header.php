@@ -1,75 +1,57 @@
-  <header>
-      <div>
-          <div class="">
+<!-- ✅ Navbar Header Start -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
 
-              <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <!--  Brand Logo -->
+            <a class="navbar-brand text-success ms-3" href="__-index.php">
+                <h1 class="h3 m-0">Photo Mentor</h1>
+            </a>
 
-                  <!-- Brand name of the page  -->
-                  <a href="__-index.php" class="navbar-brand ms-4 text-success ">
-                      <h1 class="h1">Photo Mentor</h1>
-                  </a>
+            <!--  Toggle Button for Small Screens -->
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                  <!-- Small devise toggle button  -->
-                  <button class="navbar-toggler me-4 text-center" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarcollapse">
-                      <span class="navbar-toggler-icon"></span></button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav me-4 mb-2 mb-lg-0">
 
-                  <!-- This is the navigation link of the page  -->
-                  <div class=" navbar-collapse collapse nav d-flex-inline  justify-content-md-end" id="navbarcollapse">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="__-index.php">Home</a>
+                    </li>
 
-                      <ul
-                          class="d-flex flex-row flex-lg-row flex-sm-column  justify-content-evenly justify-content-sm-start  me-4">
+                    <!-- Sign In -->
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="__-sign-in.php">Sign In</a>
+                    </li>
 
-                          <!-- It's redirect to home page  -->
-                          <li class="nav-item">
-                              <a href="__-index.php" class="nav-link text-success">Home</a>
-                          </li>
+                    <!-- Sign Up -->
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="__-sign-up.php">Sign Up</a>
+                    </li>
 
+                    <!--  About -->
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">About</a>
+                    </li>
 
-                          <!-- Sign In page nav link  -->
-                          <li class="nav-item">
-                              <a href="__-sign-in.php" class="nav-link text-success">Sign In</a>
-                          </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-success dropdown-toggle ms-lg-3 mt-2 mt-lg-0" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Hit Me
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </li>
 
-                          <!-- Sign Out page nav Link  -->
-                          <li class="nav-item">
-                              <a href="__-sign-up.php" class="nav-link text-success">Sign Up</a>
-                          </li>
-
-                          <!-- About nav link  -->
-                          <li class="nav-item">
-                              <a href="#" class="nav-link text-success">About</a>
-                          </li>
-
-                          <!-- DropDown Menu of the page  -->
-                          <li class="nav-item">
-
-                              <div class="dropdown-center ">
-
-                                  <!-- DropDown toggle button  -->
-                                  <button class="btn btn-success dropdown-toggle" type="button"
-                                      data-bs-toggle="dropdown" aria-expanded="false">Hit Me</button>
-
-                                  <!-- DropDown toggle menu it's have content of the DropDown  -->
-                                  <div class="dropdown-menu ">
-
-                                      <span class="dropdown-item">Help</span>
-                                      <span class="dropdown-item">Contact</span>
-
-                                  </div>
-
-                          </li>
-
-
-
-
-                      </ul>
-                  </div>
-
-
-              </nav>
-
-          </div>
-
-      </div>
-  </header>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

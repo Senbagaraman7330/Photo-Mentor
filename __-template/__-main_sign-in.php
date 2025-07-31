@@ -3,14 +3,14 @@
 
             <div class="card w-75 mx-auto border-3">
                 <div class="card-body">
-                    <form action="">
+                    <form action="" method="post">
 
                         <!-- Title of the form  -->
                         <h1 class="text-center fw-bold text-success my-4">Sign In</h1>
 
                         <!-- Email field of the form  -->
                         <div class="form-floating my-4">
-                            <input type="email" class="form-control " id="emailinput" placeholder="Email" required>
+                            <input type="email" class="form-control " id="emailinput" placeholder="Email" name="sign-in-email">
                             <label for="emailinput" class="form-label ">Email</label>
 
                         </div>
@@ -18,7 +18,7 @@
                         <!-- Password field of the form  -->
                         <div class="form-floating  my-4">
                             <input type="password" class="form-control " id="passwordinput" placeholder="Password"
-                                required>
+                                name="sign-in-password">
                             <label for="passwordinput" class="form-label ">Password</label>
                         </div>
 
