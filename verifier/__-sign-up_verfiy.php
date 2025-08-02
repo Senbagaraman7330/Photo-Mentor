@@ -4,7 +4,7 @@
 
 <?php
 
-include_once __DIR__.'/../__-database/__-insert_value.php';
+include __DIR__.'/../__-database/__-insert_value.php';
 
 // Check wether it's post or get 
 

@@ -1,8 +1,8 @@
 <?PHP 
 
-include_once __DIR__.'/../__-main_load.php';
+include __DIR__.'/__-database_connection.php';
 
-include_once __DIR__.'/__-database_connection.php';
+
 
 class insert_value {
 
