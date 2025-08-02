@@ -4,6 +4,8 @@
 
 <?php
 
+include_once __DIR__.'/../__-database/__-insert_value.php';
+
 // Check wether it's post or get 
 
 if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-Mentor/__-sign-up.php') {
@@ -47,6 +49,11 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <?php
+    }
+
+    else{
+
+        insert_value::insert_value_dd($first_name,$last_name,$email,$password);
     }
 }
 ?>

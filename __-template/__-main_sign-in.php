@@ -37,12 +37,3 @@
             </div>
         </div>
     </main>
-
-    <Pre>
-
-<?PHP 
-
-print_r($_SERVER);
-
-?>
-</Pre>
