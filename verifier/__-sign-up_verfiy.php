@@ -6,16 +6,18 @@
 
 // Check wether it's post or get 
 
-if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-Mentor/__-sign-in.php') {
+if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-Mentor/__-sign-up.php') {
 
-    $email = $_POST['sign-in-email'] ?? '';
-    $password = $_POST['sign-in-password'] ?? '';
+    $first_name = $_POST['sign-up-first_name'] ?? '' ;
+    $last_name = $_POST['sign-up-last_name'] ?? '';
+    $email = $_POST['sign-up-email'] ?? '';
+    $password = $_POST['sign-up-password'] ?? '';
 
-    if (empty($email) || empty($password)) {
+    if (empty($email) || empty($password) || empty($first_name) || empty($last_name)) {
         ?>
 
 <!-- Bootstrap Modal -->
-<div class="modal fade" id="warningModal" tabindex="-1" data-bs-backdrop="static">
+<div class="modal fade" id="warningModal1" tabindex="-1" data-bs-backdrop="static">
 
     <div class="modal-dialog">
 
@@ -23,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="warningModalLabel">Warning Message</h5>
+                <h5 class="modal-title fw-bold" id="warningModalLabel1">Warning Message</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -39,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-
 <!-- Trigger modal on page load -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    var myModal = new bootstrap.Modal(document.getElementById('warningModal'));
+    var myModal = new bootstrap.Modal(document.getElementById('warningModal1'));
     myModal.show();
 });
 </script>

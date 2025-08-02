@@ -10,7 +10,8 @@
 
                         <!-- Email field of the form  -->
                         <div class="form-floating my-4">
-                            <input type="email" class="form-control " id="emailinput" placeholder="Email" name="sign-in-email">
+                            <input type="email" class="form-control " id="emailinput" placeholder="Email"
+                                name="sign-in-email">
                             <label for="emailinput" class="form-label ">Email</label>
 
                         </div>
@@ -36,3 +37,12 @@
             </div>
         </div>
     </main>
+
+    <Pre>
+
+<?PHP 
+
+print_r($_SERVER);
+
+?>
+</Pre>
