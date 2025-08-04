@@ -4,7 +4,7 @@
         <div class="container-fluid">
 
             <!--  Brand Logo -->
-            <a class="navbar-brand text-success ms-3" href="__-index.php">
+            <a class="navbar-brand text-success ms-3" href="/Photo-Mentor/__-index.php">
                 <h1 class="h3 m-0">Photo Mentor</h1>
             </a>
 
@@ -20,17 +20,17 @@
 
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="__-index.php">Home</a>
+                        <a class="nav-link text-success" href="/Photo-Mentor/__-index.php">Home</a>
                     </li>
 
                     <!-- Sign In -->
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="__-sign-in.php">Sign In</a>
+                        <a class="nav-link text-success" href="/Photo-Mentor/__-sign-in.php">Sign In</a>
                     </li>
 
                     <!-- Sign Up -->
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="__-sign-up.php">Sign Up</a>
+                        <a class="nav-link text-success" href="/Photo-Mentor/__-sign-up.php">Sign Up</a>
                     </li>
 
                     <!--  About -->

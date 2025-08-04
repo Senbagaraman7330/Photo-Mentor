@@ -1,6 +1,7 @@
 <?PHP 
 
-include __DIR__.'/__-database_connection.php';
+include_once __DIR__.'/__-database_connection.php';
+
 
 
 

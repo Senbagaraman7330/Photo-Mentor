@@ -4,7 +4,7 @@
 
 include_once __DIR__.'/../__-database_values.php';
 
-
+session_start();
 
 
 

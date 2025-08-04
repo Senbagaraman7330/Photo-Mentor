@@ -4,6 +4,11 @@
 
 <?php
 
+// error_reporting(E_ALL);
+//       ini_set('display_errors',1);
+
+include_once __DIR__.'/../__-database/__-get_value.php';
+
 // Check wether it's post or get 
 
 if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-Mentor/__-sign-in.php') {
@@ -46,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <?php
     }
+    else{
+    get_value::get_value_signin($email,$password);
+}
+
 }
 ?>
 
