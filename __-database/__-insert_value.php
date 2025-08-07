@@ -9,6 +9,11 @@ class insert_value {
 
  public static function insert_value_dd($firstname,$lastname,$email,$password){
 
+   //  Hasting the password 
+
+   $options = ['cost' => 6];
+
+   $password = password_hash($password,PASSWORD_DEFAULT,$options);
 
     // Ensure the database connection 
     if (!isset(database::$conn)){
@@ -16,6 +21,7 @@ class insert_value {
         database::database_connection();
     }
   
+
     $conn = database::$conn;
     
     // Prepare and bind the quary 

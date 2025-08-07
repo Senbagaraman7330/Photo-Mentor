@@ -3,7 +3,10 @@
 include_once __DIR__.'/__-main_load.php';
 
 
-echo ($email);
+$pass = "Raman";
 
-echo ($password);
+$hasting = md5(strrev($pass."encoded-string"));
+
+echo $hasting;
+
 ?>

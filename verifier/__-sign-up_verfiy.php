@@ -49,10 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <?php
+
+
     }
 
     else{
-
+        
         insert_value::insert_value_dd($first_name,$last_name,$email,$password);
     }
 }
