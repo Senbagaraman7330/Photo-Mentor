@@ -51,7 +51,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="#">
+                        <a class="nav-link text-success" href="/Photo-Mentor/__-user-bio.php">
                             <?PHP print($_SESSION['user']) ?>
                         </a>
 
