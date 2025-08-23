@@ -6,13 +6,15 @@ include_once __DIR__.'/../__-database_values.php';
 
 session_start();
 
-
-
 // verification the data 
 
 include_once __DIR__.'/verifier/__-sign-in_verify.php';
 
 include_once __DIR__.'/verifier/__-sign-up_verfiy.php' ;
+
+include_once __DIR__.'/verifier/__-bio_verify.php';
+
+
 
 //  This function use to call the mension file  accordingly
 

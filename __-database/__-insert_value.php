@@ -7,7 +7,9 @@ include_once __DIR__.'/__-database_connection.php';
 
 class insert_value {
 
- public static function insert_value_dd($firstname,$lastname,$email,$password){
+
+
+ public static function insert_value_dd($firstname,$lastname = null,$email,$password){
 
    //  Hasting the password 
 

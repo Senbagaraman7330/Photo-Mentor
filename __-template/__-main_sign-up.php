@@ -16,9 +16,9 @@
 
                     <!-- Last name field of the form  -->
                     <div class="form-floating my-4">
-                        <input type="text" class="form-control " id="lastnameinput" placeholder="Last Name"
+                        <input type="text" class="form-control " id="lastnameinput" placeholder="Last Name (optional)"
                             name="sign-up-last_name">
-                        <label for="lastnameinput" class="form-label ">Last Name</label>
+                        <label for="lastnameinput" class="form-label ">Last Name (optional)</label>
 
                     </div>
 
@@ -50,4 +50,3 @@
         </div>
     </div>
 </main>
-

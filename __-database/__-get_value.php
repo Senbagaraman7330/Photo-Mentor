@@ -45,12 +45,17 @@ public static function get_value_signin($email,$password){
     //   stora the value in $rows 
       $row = $result->fetch_assoc();
 
+      print_r($row);
+
+
       if (password_verify($password, $row['password']))   {
         
         // User name 
         $_SESSION['user'] = $row['first_name'] . $row['last_name'];
 
         $_SESSION['success'] = "Login Successful! Welcome, " . $_SESSION['user'];
+
+        $_SESSION['id-user'] = $row['id'];
 
                 // Redirect on success
                 header("Location: /Photo-Mentor/__-database/__message.php");

@@ -9,4 +9,5 @@ $hasting = md5(strrev($pass."encoded-string"));
 
 echo $hasting;
 
+print_r($_SESSION)
 ?>

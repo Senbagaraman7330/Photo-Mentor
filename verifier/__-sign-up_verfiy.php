@@ -10,12 +10,7 @@ include __DIR__.'/../__-database/__-insert_value.php';
 
 if ($_SERVER['REQUEST_METHOD'] === "POST" && $_SERVER['SCRIPT_NAME'] == '/Photo-Mentor/__-sign-up.php') {
 
-    $first_name = $_POST['sign-up-first_name'] ?? '' ;
-    $last_name = $_POST['sign-up-last_name'] ?? '';
-    $email = $_POST['sign-up-email'] ?? '';
-    $password = $_POST['sign-up-password'] ?? '';
-
-    if (empty($email) || empty($password) || empty($first_name) || empty($last_name)) {
+    if (empty( $_POST['sign-up-first_name']) || empty($_POST['sign-up-email']) || empty($_POST['sign-up-password']) ) {
         ?>
 
 <!-- Bootstrap Modal -->
@@ -54,6 +49,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     else{
+
+    $first_name = $_POST['sign-up-first_name'] ?? '' ;
+    $last_name = $_POST['sign-up-last_name'] ?? '';
+    $email = $_POST['sign-up-email'] ?? '';
+    $password = $_POST['sign-up-password'] ?? '';
         
         insert_value::insert_value_dd($first_name,$last_name,$email,$password);
     }
